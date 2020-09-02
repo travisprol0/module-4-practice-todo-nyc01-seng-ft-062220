@@ -1,11 +1,9 @@
-import React from "react";
+import React from "react"
 
 class CategoryContainer extends React.Component {
   clickHandler = (e) => {
-    
-      this.props.clickHandler(e);
-    
-  };
+    this.props.clickHandler(e)
+  }
 
   categories = () => {
     return this.props.categories.map((category) => {
@@ -18,19 +16,16 @@ class CategoryContainer extends React.Component {
           >
             {category}
           </button>
-        );
+        )
       } else {
-          return (
-            <button
-            onClick={this.clickHandler}
-            value={category}
-          >
+        return (
+          <button onClick={this.clickHandler} value={category}>
             {category}
           </button>
-          )
+        )
       }
-    });
-  };
+    })
+  }
 
   render() {
     return (
@@ -38,8 +33,8 @@ class CategoryContainer extends React.Component {
         <h5>Category filters</h5>
         {this.categories()}
       </div>
-    );
+    )
   }
 }
 
-export default CategoryContainer;
+export default CategoryContainer

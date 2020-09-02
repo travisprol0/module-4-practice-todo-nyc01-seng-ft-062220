@@ -1,8 +1,8 @@
-import React from "react";
-import "./App.css";
-import { CATEGORIES } from "./data";
-import TaskContainer from "./Containers/TaskContainer";
-import CategoryContainer from "./Containers/CategoryContainer";
+import React from "react"
+import "./App.css"
+import { CATEGORIES } from "./data"
+import TaskContainer from "./Containers/TaskContainer"
+import CategoryContainer from "./Containers/CategoryContainer"
 
 class App extends React.Component {
   state = {
@@ -37,11 +37,15 @@ class App extends React.Component {
       },
     ],
     category: "All",
-  };
+  }
 
   categoryClick = (e) => {
-    this.setState({ category: e.target.value });
-  };
+    this.setState({ category: e.target.value })
+  }
+
+  addTask = (newTask) => {
+    this.setState({ tasks: [...this.state.tasks, newTask] })
+  }
 
   render() {
     return (
@@ -55,10 +59,11 @@ class App extends React.Component {
         <TaskContainer
           tasks={this.state.tasks}
           category={this.state.category}
+          newTask={this.addTask}
         />
       </div>
-    );
+    )
   }
 }
 
-export default App;
+export default App
