@@ -25,7 +25,7 @@ class TaskForm extends React.Component {
 
   render() {
     return (
-      <form onSubmit={this.submitHandler}>
+      <form className="new-task-form" onSubmit={this.submitHandler}>
         <input
           type="text"
           placeholder="New Task Details"

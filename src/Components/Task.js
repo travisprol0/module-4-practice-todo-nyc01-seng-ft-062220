@@ -5,8 +5,8 @@ class Task extends React.Component {
     return (
       <div className="task">
         <div className="label">{this.props.task.category}</div>
-        <div className="task">{this.props.task.text}</div>
-        <button onClick={this.props.deleteTask}>X</button>
+        <div className="text">{this.props.task.text}</div>
+        <button className="delete" onClick={this.props.deleteTask}>X</button>
       </div>
     )
   }
