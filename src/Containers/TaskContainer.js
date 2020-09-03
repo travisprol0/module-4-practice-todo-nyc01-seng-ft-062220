@@ -30,7 +30,6 @@ class TaskContainer extends React.Component {
   render() {
     return (
       <div>
-        <TaskForm addTask={this.addTask} />
         <div className="tasks">{this.filterTasks()}</div>
       </div>
     )
