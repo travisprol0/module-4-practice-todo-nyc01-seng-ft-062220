@@ -10,8 +10,8 @@ class TaskContainer extends React.Component {
     }
 
     tasks = (r) => {
-      console.log(r)
-    }
+    console.log(r)
+  }
 
 
   filterTasks = () => {
