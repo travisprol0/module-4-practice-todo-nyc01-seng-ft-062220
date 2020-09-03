@@ -1,5 +1,4 @@
 import React from "react"
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom"
 
 class CategoryContainer extends React.Component {
   clickHandler = (e) => {

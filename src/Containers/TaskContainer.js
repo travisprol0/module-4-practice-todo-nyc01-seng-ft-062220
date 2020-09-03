@@ -1,6 +1,5 @@
 import React from "react"
 import Task from "../Components/Task"
-import TaskForm from "../Components/TaskForm"
 
 class TaskContainer extends React.Component {
   filterTasks = () => {
