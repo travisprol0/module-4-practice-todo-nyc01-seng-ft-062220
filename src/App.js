@@ -43,11 +43,15 @@ class App extends React.Component {
     category: "All",
   }
 
+  
+
+
   categoryClick = (e) => {
     this.setState({ category: e.target.value })
   }
 
   addTask = (newTask) => {
+    console.log("Setting State in App:", newTask)
     this.setState({ tasks: [...this.state.tasks, newTask] })
   }
 
