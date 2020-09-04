@@ -96,6 +96,16 @@ h5 {
   border: solid #ffb1b1 0.1rem;
   cursor: pointer;
 }
+.tasks .task > button.complete {
+  margin-left: auto;
+  border-radius: 0.5rem;
+  background: green;
+  color: greenyellow;
+  font-weight: bolder;
+  font-size: 1rem;
+  border: solid greenyellow 0.1rem;
+  cursor: pointer;
+}
 
 .tasks .task > button.delete:hover {
   filter: brightness(1.1);
@@ -179,4 +189,8 @@ button.toggle:focus {
     opacity: 0;
     transform: scale(20);
   }
+}
+
+.active{
+  color: red
 }

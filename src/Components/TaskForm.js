@@ -21,7 +21,6 @@ class TaskForm extends React.Component {
       input: "",
       category: "Code",
     })
-
   
   fetch('http://localhost:4000/api/v1/tasks', {
     method: 'POST',
@@ -56,7 +55,7 @@ class TaskForm extends React.Component {
         >
           <option>Code</option>
           <option>Food</option>
-          <option>Money</option>
+          <option>Household</option>
           <option>Misc</option>
         </select>
         <input type="submit" value="Add Task"></input>
